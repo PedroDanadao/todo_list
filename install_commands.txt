@@ -1,0 +1,12 @@
+npm init -y
+(remember to change the project name and description in package.json)
+
+npm install --save-dev webpack webpack-cli
+(to build webpack use the command: npx webpack)
+
+npm install --save-dev style-loader css-loader
+npm install --save-dev html-loader
+
+npm install --save-dev webpack-dev-server
+(to run webpack dev server use the command: npx webpack serve
+and open this link in the browser: http://localhost:8080/)

@@ -1,0 +1,13 @@
+{
+    "typescript.tsdk": "C:\\Users\\Pedro\\AppData\\Roaming\\npm\\node_modules\\typescript\\lib",
+    "filewatcher.commands": [
+		{
+			"match": "\\.ts*",
+			"isAsync": true,
+			// "cmd": "echo '${file} file content Changed'",
+			// "cmd": "d: && ${workspaceRoot}\\.vscode\\echo_paths.bat ${workspaceRoot}",
+			"cmd": "d: && cd \"${fileDirname}\" && tsc \"${file}\" --target es2022 --outDir dist_js",
+			"event": "onFileChange"
+		}		
+	]
+}
